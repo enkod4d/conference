@@ -24,56 +24,32 @@ export function Footer() {
               Улсын нэгдүгээр төв эмнэлэг
             </Typography>
             <Typography color="white" className="mb-12 font-normal">
-              The reward for getting on the stage is fame.
+              Address : С.Зоригийн Гудамж 2 210648, SBD - 1 khoroo, Ulaanbaatar 14210
+              <br />
+              Tel : 80183000
+              <br />
+              Mail : Test@gmail.com
             </Typography>
-            <ul className="flex flex-wrap items-center justify-center md:justify-start">
-              {LINKS.map((link, idx) => (
-                <li key={link}>
-                  <Typography
-                    as="a"
-                    href="#"
-                    color="white"
-                    className={`py-1 font-medium transition-colors ${
-                      idx === 0 ? "pr-3" : "px-3"
-                    }`}
-                  >
-                    {link}
-                  </Typography>
-                </li>
-              ))}
-            </ul>
           </div>
           <div className="mt-8 w-full md:mt-0 md:w-auto">
-            <Typography variant="h6" color="white" className="mb-3">
-              Get the app
-            </Typography>
             <div className="flex flex-col gap-2">
-              <Button
-                color="white"
-                className="flex items-center justify-center"
-              >
-                <Image
-                  width={256}
-                  height={256}
-                  src="/logos/logo-apple.png"
-                  className="-mt-0.5 mr-2 h-6 w-6"
-                  alt="ios"
-                />
-                App Store
-              </Button>
-              <Button
-                color="white"
-                className="flex items-center justify-center"
-              >
-                <Image
-                  width={256}
-                  height={256}
-                  src="/logos/logo-google.png"
-                  className="-mt-0.5 mr-2 h-6 w-6"
-                  alt="ios"
-                />
-                Google Play
-              </Button>
+            <Typography
+              as="a"
+              href="https://unte.moh.gov.mn/"
+              target="_blank"
+              variant="h5"
+              color="white"
+              className="mb-4"
+            >
+              Conference зохион байгуулагч
+            </Typography>
+            <Typography color="white" className="mb-12 font-normal">
+              Address : С.Зоригийн Гудамж 2 210648, SBD - 1 khoroo, Ulaanbaatar 14210
+              <br />
+              Tel : 80183000
+              <br />
+              Mail : Test@gmail.com
+            </Typography>
             </div>
           </div>
         </div>
@@ -87,19 +63,10 @@ export function Footer() {
 
           <div className="flex gap-2">
             <IconButton variant="text" color="white">
-              <i className="fa-brands fa-twitter text-2xl not-italic opacity-75"></i>
-            </IconButton>
-            <IconButton variant="text" color="white">
-              <i className="fa-brands fa-linkedin text-2xl not-italic opacity-75"></i>
-            </IconButton>
-            <IconButton variant="text" color="white">
               <i className="fa-brands fa-facebook text-2xl not-italic opacity-75"></i>
             </IconButton>
             <IconButton variant="text" color="white">
-              <i className="fa-brands fa-github text-2xl not-italic opacity-75"></i>
-            </IconButton>
-            <IconButton variant="text" color="white">
-              <i className="fa-brands fa-dribbble text-2xl not-italic opacity-75"></i>
+              <i className="fa-brands fa-instagram text-2xl not-italic opacity-75"></i>
             </IconButton>
           </div>
         </div>

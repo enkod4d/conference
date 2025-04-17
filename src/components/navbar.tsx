@@ -1,4 +1,6 @@
 import React from "react";
+import Image from "next/image";
+
 import {
   Navbar as MTNavbar,
   Collapse,
@@ -39,7 +41,7 @@ export function Navbar() {
   React.useEffect(() => {
     window.addEventListener(
       "resize",
-      () => window.innerWidth >= 960 && setOpen(false)
+      () => window.innerWidth >= 960 && setOpen(false),
     );
   }, []);
 
@@ -62,56 +64,39 @@ export function Navbar() {
       fullWidth
       shadow={false}
       blurred={false}
-      color={isScrolling ? "white" : "transparent"}
+      // color={isScrolling ? "white" : "transparent"}
+      color={"white"}
       className="fixed top-0 z-50 border-0"
     >
       <div className="container mx-auto flex items-center justify-between">
-        <Typography
-          as="a"
-          href="https://www.material-tailwind.com"
-          target="_blank"
-          variant="h6"
-          color={isScrolling ? "gray" : "white"}
-        >
-          Material Tailwind
-        </Typography>
+        <Image
+          alt=""
+          width={256}
+          height={256}
+          src={"https://www.lmce-kslm.org/include/img/main/logo_top.png"}
+        />
         <ul
-          className={`ml-10 hidden items-center gap-6 lg:flex ${
-            isScrolling ? "text-gray-900" : "text-white"
-          }`}
+          className={`ml-10 hidden items-center gap-6 lg:flex ${"text-gray-900"}`}
         >
-          <NavItem>Home</NavItem>
-          <NavItem>About Us</NavItem>
-          <NavItem>Contact Us</NavItem>
-          <NavItem href="https://www.material-tailwind.com/docs/react/installation">
-            Docs
-          </NavItem>
+          <NavItem>LMCE 2025</NavItem>
+          <NavItem>Program</NavItem>
+          <NavItem>Abstracts</NavItem>
+          <NavItem>Sponsor</NavItem>
+          <NavItem>Information</NavItem>
         </ul>
         <div className="hidden gap-2 lg:flex lg:items-center">
-          <IconButton
-            variant="text"
-            color={isScrolling ? "gray" : "white"}
-            size="sm"
-          >
+          <IconButton variant="text" color={"gray"} size="sm">
             <i className="fa-brands fa-twitter text-base" />
           </IconButton>
-          <IconButton
-            variant="text"
-            color={isScrolling ? "gray" : "white"}
-            size="sm"
-          >
+          <IconButton variant="text" color={"gray"} size="sm">
             <i className="fa-brands fa-facebook text-base" />
           </IconButton>
-          <IconButton
-            variant="text"
-            color={isScrolling ? "gray" : "white"}
-            size="sm"
-          >
+          <IconButton variant="text" color={"gray"} size="sm">
             <i className="fa-brands fa-instagram text-base" />
           </IconButton>
           <a href="https://www.material-tailwind.com/blocks" target="_blank">
-            <Button color={isScrolling ? "gray" : "white"} size="sm">
-              Blocks
+            <Button color={"gray"} size="sm">
+              Registration
             </Button>
           </a>
         </div>
@@ -131,12 +116,11 @@ export function Navbar() {
       <Collapse open={open}>
         <div className="container mx-auto mt-4 rounded-lg border-t border-blue-gray-50 bg-white px-6 py-5">
           <ul className="flex flex-col gap-4 text-blue-gray-900">
-            <NavItem>Home</NavItem>
-            <NavItem>About Us</NavItem>
-            <NavItem>Contact Us</NavItem>
-            <NavItem href="https://www.material-tailwind.com/docs/react/installation">
-              Docs
-            </NavItem>
+            <NavItem>LMCE 2025</NavItem>
+            <NavItem>Program</NavItem>
+            <NavItem>Abstracts</NavItem>
+            <NavItem>Sponsor</NavItem>
+            <NavItem>Information</NavItem>
           </ul>
           <div className="mt-4 flex items-center gap-2">
             <IconButton variant="text" color="gray" size="sm">
@@ -150,7 +134,7 @@ export function Navbar() {
             </IconButton>
             <a href="https://www.material-tailwind.com/blocks" target="_blank">
               <Button color="gray" size="sm" className="ml-auto">
-                Blocks
+                Registration
               </Button>
             </a>
           </div>

@@ -5,31 +5,30 @@ import { Typography, Card } from "@material-tailwind/react";
 
 const FAQS = [
   {
-    title: "How do I get started?",
-    desc: "Getting started is easy! Simply [Provide a brief overview of the initial steps or link to a detailed guide].",
+    title: "Question 1?",
+    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
   },
   {
-    title: "Is there a free trial available?",
-    desc: "Yes, we offer a 30 days free trial so you can experience our mobile application with no commitment.",
+    title: "Question 2?",
+    desc: "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
   },
   {
-    title: "How can I upgrade my account?",
-    desc: "To upgrade your account, log in and navigate to the [Upgrade Account] section in your dashboard. Follow the prompts to select your preferred plan.",
+    title: "Question 3?",
+    desc: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.",
   },
   {
-    title: "Can I cancel my subscription anytime?",
-    desc: "Absolutely, you can cancel your subscription at any time with no questions asked. Your subscription will remain active until the end of the current billing cycle.",
+    title: "Question 4?",
+    desc: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.",
   },
   {
-    title: "How can I upgrade my account to paid?",
-    desc: "To upgrade your account, log in and navigate to the [Upgrade Account] section in your dashboard. Follow the prompts to select your preferred plan.",
+    title: "Question 5?",
+    desc: "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui.",
   },
   {
-    title: "What if I need help or have technical issues?",
-    desc: "Our dedicated support team is here to assist you. Reach out via [mention preferred support channels, e.g., live chat, email, or phone], and we'll get back to you promptly.",
+    title: "Question 6?",
+    desc: "Mollit anim id est laborum. Lorem ipsum dolor sit amet.",
   },
 ];
-
 export function Faqs() {
   return (
     <section className="px-8 py-20">
@@ -42,9 +41,10 @@ export function Faqs() {
             variant="lead"
             className="mx-auto mb-24 !text-gray-500 lg:w-3/5"
           >
-            A lot of people don&apos;t appreciate the moment until it&apos;s
-            passed. I&apos;m not trying my hardest, and I&apos;m not trying to
-            do
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.
           </Typography>
         </div>
 

@@ -73,7 +73,9 @@ export function Navbar() {
           alt=""
           width={256}
           height={256}
-          src={"https://www.lmce-kslm.org/include/img/main/logo_top.png"}
+          src={
+            "https://lh5.googleusercontent.com/proxy/635bVrUyVeC3OvHujEDUMP7940P2JI8g8LEEIRQeiHG62xqlueQiXmYbpj7-9M-Ao9tc9Ir1sMJdNrQzpYYG7KpG6GN6qG-wczYC2KoUVSnEJKc0gMczMj1eJow0Bdrt"
+          }
         />
         <ul
           className={`ml-10 hidden items-center gap-6 lg:flex ${"text-gray-900"}`}

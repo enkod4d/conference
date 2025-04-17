@@ -11,15 +11,17 @@ export function Footer() {
       <div className="container mx-auto">
         <div className="flex flex-wrap justify-center gap-8 md:justify-between">
           <div className="text-center md:text-left">
+          {// @ts-ignore
+  }
             <Typography
               as="a"
-              href="https://www.material-tailwind.com"
+              href="https://unte.moh.gov.mn/"
               target="_blank"
               variant="h5"
               color="white"
               className="mb-4"
             >
-              Material Tailwind
+              Улсын нэгдүгээр төв эмнэлэг
             </Typography>
             <Typography color="white" className="mb-12 font-normal">
               The reward for getting on the stage is fame.
@@ -80,15 +82,7 @@ export function Footer() {
             color="white"
             className="text-center font-normal opacity-75"
           >
-            &copy; {CURRENT_YEAR} Made with{" "}
-            <a href="https://www.material-tailwind.com" target="_blank">
-              Material Tailwind
-            </a>{" "}
-            by{" "}
-            <a href="https://www.creative-tim.com" target="_blank">
-              Creative Tim
-            </a>
-            .
+            &copy; {CURRENT_YEAR} All rights reserved.
           </Typography>
 
           <div className="flex gap-2">
